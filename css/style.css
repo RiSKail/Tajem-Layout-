@@ -1,0 +1,136 @@
+.main-container{
+    background: url("../img/header.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 670px;
+    position: relative;
+}
+
+.main-container__overlay{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 670px;
+    background-image: -moz-linear-gradient( 0deg, rgb(9,5,47) 0%, rgb(49,29,94) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(9,5,47) 0%, rgb(49,29,94) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(9,5,47) 0%, rgb(49,29,94) 100%);
+    opacity: 0.851; 
+}
+
+.header{
+    width: 79.4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.logo{
+    background: url("../img/logo.png") no-repeat center;
+    width: 128px;
+    height: 100%;
+}
+
+.menu{
+    width: 60%;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: #ffffff;
+    outline: none;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.menu-link:hover{
+    color: #04d2c7;
+}
+
+.main-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    height: 70vh;
+}
+
+.main-text h1{
+    font-family: 'Playfair Display';
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.main-text h1::after{
+    display: block;
+    content: '';
+    background-color: #04d2c7;
+    height: 1px;
+    width: 50px;
+    margin: 27px auto;
+}
+
+.main-text span{
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 25px;
+    padding-bottom: 53px;
+}
+
+.main-text a{
+    font-family: 'Hammersmith One';
+    text-decoration: none;
+    color: #04d2c7;
+    text-transform: uppercase;
+}
+
+.main-text__btn{
+    width: 118px;
+    height: 38px;
+    border: 1px solid #04d2c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.main-slider{
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    height: 150px;
+    align-items: center;
+}
+
+.main-slider input {
+    display: none;
+}
+
+.main-slider label {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid #ffff;
+    cursor: pointer;
+}
+
+#button1:checked ~ #hw1,
+#button2:checked ~ #hw2,
+#button3:checked ~ #hw3,
+#button4:checked ~ #hw4 {
+    background: #04d2c7;
+}
