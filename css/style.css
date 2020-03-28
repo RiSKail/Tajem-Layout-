@@ -22,9 +22,9 @@
 .header{
     width: 79.4%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    margin: 14px 0 0 0;
 }
 
 .logo{
@@ -34,7 +34,7 @@
 }
 
 .menu{
-    width: 60%;
+    width: 47%;
 }
 
 .menu ul{
@@ -50,6 +50,7 @@
     text-transform: uppercase;
     font-family: 'Roboto';
     font-weight: bold;
+    font-size: 13px;
 }
 
 .menu-link:hover{
@@ -62,11 +63,12 @@
     flex-direction: column;
     width: 50%;
     justify-content: center;
-    height: 70vh;
+    margin: 158px 0 0 0;
 }
 
 .main-text h1{
     font-family: 'Playfair Display';
+    font-size: 32px;
     color: #ffffff;
     margin: 0;
     text-align: center;
@@ -83,6 +85,7 @@
 
 .main-text span{
     font-family: 'Roboto';
+    font-size: 14px;
     color: #ffffff;
     font-weight: lighter;
     text-align: center;
@@ -111,7 +114,7 @@
     display: flex;
     justify-content: space-between;
     width: 60px;
-    height: 150px;
+    margin: 127px 0 0 0;
     align-items: center;
 }
 
@@ -133,4 +136,59 @@
 #button3:checked ~ #hw3,
 #button4:checked ~ #hw4 {
     background: #04d2c7;
+    border: 1px solid #04d2c7;
+}
+
+.about-container {
+    display: flex;
+    width: 100%;
+    height: 402px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container__logo {
+    background: url("../img/logo_2.png") no-repeat center;
+    width: 415px;
+    height: 100%;
+}
+
+.about-container__text {
+    width: 560px;
+    height: 100%;
+    margin: 0 0 0 10px;
+}
+
+.about-container__text h1 {
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    color: #413d4b;
+    margin: 76px 0 0 0;
+    padding: 0 0 28px 0;
+    text-transform: uppercase;
+}
+
+.about-container__text span {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 14px;
+    color: #413d4b;
+}
+
+.about-container__text a {
+    font-family: 'Hammersmith One';
+    text-decoration: none;
+    color: #04d2c7;
+    text-transform: uppercase;
+}
+
+.about-text__btn{
+    width: 118px;
+    height: 38px;
+    border: 1px solid #04d2c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    margin: 34px 0 0 0;
 }
